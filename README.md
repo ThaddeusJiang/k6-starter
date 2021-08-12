@@ -64,3 +64,37 @@ $ docker-compose run -v \
 open http://localhost:3000
 
 ![](./assets/k6-load-testing-results.jpg)
+
+## How to
+
+1. Write your scenario of load testing
+2. Write your test of load testing
+3. confirm the result
+
+
+## folder structure
+
+```
+.
+├── data // Converters for API testing tools TODO: postman / openapi
+├── dist
+├── grafana
+│   ├── dashboards
+│   └── datasources
+└── src
+    ├── consts
+    ├── fixtures // Your data for your request
+    └── modules  // Your test
+    └── utils.ts
+└────── webpack.config.js
+```
+
+## TODO:
+
+- [ ] customize Grafana dashboard
+  - [ ] Group
+  - [ ] http method
+  - [ ] Error
+- [ ] docs
+  - [ ] how to debug?
+- [ ] isolate apis
